@@ -1,0 +1,135 @@
+body{
+	font-family: 'Arvo', serif;
+
+}
+
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/Free.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.h2{
+	padding-bottom: 10px;
+	font-size: 1.8em;
+}
+
+.strong{
+	font-size: 1.1em;
+}
+.main{
+	width: 75%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position:relative;
+	left: 50%;
+	padding: 20px;
+	transform: translate(-50%);
+}
+.article{
+	
+	width: 300px;
+	height: 500px;
+	position: relative;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 15px;
+	box-shadow: 0px 5px 9px  rgba(0, 0, 0, 0.2),0px 3px 8px rgba(0, 0, 0, 0.19);
+	transition: box-shadow .4s ease;
+}
+.article:hover{
+	box-shadow: 0px 5px 19px  rgba(0, 0, 0, 0.2),0px 3px 18px rgba(0, 0, 0, 0.19);
+}
+.article__post{
+	position: absolute;
+	z-index: -1;
+	background-color: #fff;
+}
+.img{
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+}
+.article__post--fecha{
+	width: 100%;
+	height: 20px;
+	margin-top: 5px;
+	padding-left: 10px;
+	font-size: 0.9em;
+	line-height: 20px;
+}
+.article-titulo{
+	width: 100%;
+	margin-top: 15px;
+	padding-left: 10px;
+
+}
+
+.article-descripcion{
+	width: 100%;
+	margin-top: 30px;
+	padding-left: 10px;
+	font-size: 0.9em;
+	line-height: 20px;
+}
+.post-info{
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	top: 40px;
+	padding-top: 15px;
+}
+
+
+/*js*/
+.content-modal{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	
+}
+.modal{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	z-index: 100;
+	background-color: #fff;
+	overflow: scroll;
+	box-shadow: 0px 5px 9px  rgba(0, 0, 0, 0.2),0px 3px 8px rgba(0, 0, 0, 0.19);
+
+}
+.span{
+	position: fixed;
+	z-index: 110;
+	cursor: pointer;
+	top:10px;
+	right: 25px;
+	width: 50px;
+	height: 50px;
+	background-color: #000;
+	color: #fff;
+	font-size: 1.2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	box-shadow: 0px 5px 9px  rgba(0, 0, 0, 0.2),0px 3px 8px rgba(0, 0, 0, 0.19);
+	transition: transform .4s ease;
+}
+.span:hover{
+	transform: scale(.96);
+}
