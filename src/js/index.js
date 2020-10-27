@@ -2,7 +2,7 @@ import header from './componentes/header.js'
 import post from './componentes/post.js'
 import contenidoPost from './componentes/contenido-post.js'
 
-
+alert('asdasd')
 const $main = document.getElementById('main')
 const $contentModal = document.getElementById('content-modal')
 
